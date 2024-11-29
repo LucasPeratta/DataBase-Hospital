@@ -16,7 +16,7 @@ def gestionar_medicos():
         if sub_opcion == '1':
             registrar_medico()
         elif sub_opcion == '2':
-            modificar_medico()
+            actualizar_medico()
         elif sub_opcion == '3':
             eliminar_medico()
         elif sub_opcion == '4':
@@ -35,7 +35,7 @@ def registrar_medico():
     telefono = input("Teléfono del médico: ")
     registrar_medico_controller(nombre, especialidad, telefono)
 
-def modificar_medico():
+def actualizar_medico():
     """Función para modificar los datos de un médico existente."""
     id_medico = int(input("ID del médico a modificar: "))
     nombre = input("Nuevo nombre (opcional): ")
