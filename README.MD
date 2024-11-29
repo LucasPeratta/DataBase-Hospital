@@ -17,8 +17,18 @@ Antes de ejecutar el proyecto, asegúrate de tener los siguientes requisitos ins
 
 - **Luego** debera conectarse a la base de datos utilizando:
   mysql -u root -p
-  Y luego su contraseña que es "root" por determiando. (la puede cambiar en el archivo init_db.py)
+  Y luego su contraseña que es "root" por DEFECTO. (la puede cambiar en el archivo init_db.py)
 
-- **LUEGO** usar comandos:
+- Si se concecto exitosamente a la base de datos, puede probar los distintos comandos para ver las tablas:
+  SHOW TABLES FROM hospital; (o se puede usar los siguientes:)
+  USE hospital;
+  SHOW TABLES;
+  SELECT _ FROM medico;
+  SELECT _ FROM paciente;
+  SELECT \* FROM cita;
+
+  exit; (para salir de la base de datos)
+
+- **LUEGO** usar comandos para ejecutar los archivos python:
   python init_db.py
   python Hospital.py
